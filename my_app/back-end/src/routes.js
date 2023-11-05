@@ -49,7 +49,7 @@ routes.post("/", async (req, res) => {
     try {
         const newVeiculo = db.Veiculo.build(vehicle);
         await newVeiculo.save();
-        return res.json({ status: "ok", user: newVeiculo });
+        return res.json({ status: "ok", veiculo: newVeiculo });
     } catch (error) {
         if (error.name === "SequelizeValidationError") {
             return res.status(400).json({ status: "fail", message: "Falha ao salvar. Campos obrigatórios estão ausentes ou nulos." });
