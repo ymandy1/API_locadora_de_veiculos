@@ -24,7 +24,7 @@
 # Aprendendo a utilizar o projeto :pencil:
 <h3>Primeiro, vamos clonar o projeto com o seguinte comando:</h3><br>
 
-`git clone url_do_repositorio`
+`git clone https://github.com/ymandy1/API_locadora_de_veiculos`
 
 <h3>Agora, considerando que você já tenha todas as dependências baixadas, o npm e o Docker instalado na sua máquina,
 realize a seguinte etapa: </h3>
