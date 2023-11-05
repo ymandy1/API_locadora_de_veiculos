@@ -109,7 +109,7 @@ export default {
 				};
 
 				api
-					.post("/", JSON.stringify(vehicleData))
+					.post("/veiculos", JSON.stringify(vehicleData))
 					.then(response => {
 						console.log(response);
 					})
@@ -121,7 +121,7 @@ export default {
 			}
 		},
 		update() {
-			api.get("/")
+			api.get("/veiculos")
 				.then(response => {
 					this.vehicles = response.data;
 				})
@@ -131,7 +131,7 @@ export default {
 		},
 		button_delete(id) {
 			console.log(id)
-			api.delete(`/${id}`)
+			api.delete(`/veiculos/${id}`)
 				.then(response => {
 					console.log(response)
 				})
