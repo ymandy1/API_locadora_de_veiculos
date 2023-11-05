@@ -19,7 +19,6 @@
 - npm
 - Docker
 - Dependências do Node: Express, mysql2, Sequelize, Nodemon
-- VueJS
 - Visual Studio Code
 
 # Aprendendo a utilizar o projeto :pencil:
@@ -69,6 +68,22 @@ Isso deverá inicializar um servidor na porta (3333)
 
 <h1>Com o servidor aberto e os dados mostrados, <br> é hora de irmos para o front-end! :tada: </h1>
 
+Agora, abra um novo terminal no vscode e digite o comando:
+
+`cd my_app` <br>
+`cd front-end`
+
+<h3>Depois de entrar na pasta front-end, digite: </h3>
+
+`npm i` <br>
+
+E logo em seguida:
+
+`npm run dev`
+
+<h3>Agora, copie o localhost que aparecerá no terminal e abra no seu navegador.
+ </h3>
+ <h3>Você deverá ser capaz de visualizar o projeto :rocket: </h3>
 
 <h2> Proposta de resolução (sem dados)</h2>
 
