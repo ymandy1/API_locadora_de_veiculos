@@ -103,7 +103,7 @@ E logo em seguida:
 
 - Clicar em atualizar lista e observar o item adicionado logo abaixo <br>
 
-- Editar dado irá selecionar o veículo que você escolheu e então você poderá realizar a edição e clicar em 'atualizar edição', depois, 'atualizar lista' e os seus dados serão atualizados <br>
+- 'Editar' irá selecionar o veículo que você escolheu e então você poderá realizar a edição e clicar em 'atualizar edição', depois, 'atualizar lista' e os seus dados serão atualizados <br>
 
 - Para excluir, basta clicar no botão de excluir e 'atualizar lista' para ter o dado excluído com sucesso!
 
