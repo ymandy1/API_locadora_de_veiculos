@@ -29,7 +29,7 @@
 <h3>Agora, considerando que você já tenha todas as dependências baixadas, o npm e o Docker instalado na sua máquina,
 realize a seguinte etapa: </h3>
 
-<h3>No terminal, digite: </h3> <br>
+No terminal, digite: <br>
 
 `cd my_app` <br>
 
@@ -68,7 +68,7 @@ Isso deverá inicializar um servidor na porta (3333)
 
 <h1>Com o servidor aberto e os dados mostrados, <br> é hora de irmos para o front-end! :tada: </h1>
 
-Agora, abra um novo terminal no vscode e digite o comando:
+<h3>Agora, abra um novo terminal no vscode e digite o comando: </h3>
 
 `cd my_app` <br>
 `cd front-end`
