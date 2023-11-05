@@ -87,7 +87,7 @@ E logo em seguida:
 
 <h2> Proposta de resolução (sem dados)</h2>
 
-![API](resources_github/api_locadora.png)
+![API](resources_github/CRUD_veiculos.png)
 
 <h2> Proposta de resolução (com exemplo de dados) </h2>
 
