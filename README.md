@@ -12,14 +12,14 @@
 - Node.js
 - Dependências do Node: Express, mysql2, Sequelize, Nodemon
 - Vue.js
-- Bibliotecas: Axios, UUID
+- Bibliotecas: Axios, UUID (e as dependências do node)
 
 # O que você vai precisar:
 - Node JS LTS
 - npm
 - Docker
 - Dependências do Node: Express, mysql2, Sequelize, Nodemon
-- VueJS
+- Visual Studio Code
 
 # Aprendendo a utilizar o projeto :pencil:
 <h3>Primeiro, vamos clonar o projeto com o seguinte comando:</h3><br>
@@ -29,7 +29,7 @@
 <h3>Agora, considerando que você já tenha todas as dependências baixadas, o npm e o Docker instalado na sua máquina,
 realize a seguinte etapa: </h3>
 
-<h3>No terminal, digite: </h3> <br>
+No terminal, digite: <br>
 
 `cd my_app` <br>
 
@@ -68,6 +68,22 @@ Isso deverá inicializar um servidor na porta (3333)
 
 <h1>Com o servidor aberto e os dados mostrados, <br> é hora de irmos para o front-end! :tada: </h1>
 
+<h3>Agora, abra um novo terminal no vscode e digite o comando: </h3>
+
+`cd my_app` <br>
+`cd front-end`
+
+<h3>Depois de entrar na pasta front-end, digite: </h3>
+
+`npm i` <br>
+
+E logo em seguida:
+
+`npm run dev`
+
+<h3>Agora, copie o localhost que aparecerá no terminal e abra no seu navegador.
+ </h3>
+ <h3>Você deverá ser capaz de visualizar o projeto :rocket: </h3>
 
 <h2> Proposta de resolução (sem dados)</h2>
 
