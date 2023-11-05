@@ -5,7 +5,7 @@ const { v4: uuidv4 } = require('uuid');
 const routes = express.Router();
 
 
-routes.get('/', (req, res) => {
+routes.get('/veiculos', (req, res) => {
     const resp = {}
 
     try {
@@ -21,7 +21,7 @@ routes.get('/', (req, res) => {
     }
 })
 
-routes.get('/:id', (req, res) => {
+routes.get('/veiculos/:id', (req, res) => {
     const resp = {}
 
     try {
@@ -42,7 +42,7 @@ routes.get('/:id', (req, res) => {
     }
 })
 
-routes.post("/", async (req, res) => {
+routes.post("/veiculos", async (req, res) => {
     const resp = {};
     const vehicle = {id: uuidv4(), ...req.body}
     
@@ -58,7 +58,7 @@ routes.post("/", async (req, res) => {
     }
 });
 
-routes.put('/:id', async (req, res) => {
+routes.put('/veiculos/:id', async (req, res) => {
     try {
         const veiculo = await db.Veiculo.findOne({
             where: {
@@ -80,7 +80,7 @@ routes.put('/:id', async (req, res) => {
 });
 
 
-routes.delete('/:id', (req, res) => {
+routes.delete('/veiculos/:id', (req, res) => {
     let resp = {}
 
     try {
