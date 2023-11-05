@@ -55,6 +55,8 @@ No docker, você deve conseguir visualizar um banco de dados chamado 'basic-mysq
 
 `npx sequelize-cli db:migrate`
 
+(Observe que pode ser pedido para realizar a instalação do sequelize-cli. Caso seja solicitado, apenas prossiga com Y e depois da instalação, digite npm i)
+
 <h3>Depois da migration ser efetuada com sucesso, rode esse comando: </h3>
 
 `npx sequelize db:seed:all`
@@ -64,7 +66,9 @@ No src do projeto, rode o seguinte comando para abrirmos o servidor:<br>
 
 `npm run start`
 
-Isso deverá inicializar um servidor na porta (3333)
+Isso deverá inicializar um servidor na porta (3333) <br>
+
+<h3>Com isso, digite 'localhost:3333/veiculos'</h3> 
 
 <h1>Com o servidor aberto e os dados mostrados, <br> é hora de irmos para o front-end! :tada: </h1>
 
