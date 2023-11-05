@@ -12,7 +12,7 @@
 - Node.js
 - Dependências do Node: Express, mysql2, Sequelize, Nodemon
 - Vue.js
-- Bibliotecas: Axios, UUID
+- Bibliotecas: Axios, UUID (e as dependências do node)
 
 # O que você vai precisar:
 - Node JS LTS
@@ -20,6 +20,7 @@
 - Docker
 - Dependências do Node: Express, mysql2, Sequelize, Nodemon
 - VueJS
+- Visual Studio Code
 
 # Aprendendo a utilizar o projeto :pencil:
 <h3>Primeiro, vamos clonar o projeto com o seguinte comando:</h3><br>
