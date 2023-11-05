@@ -93,6 +93,16 @@ E logo em seguida:
 
 ![API](resources_github/CRUD_veiculos2.png)
 
+<h2>Funcionamento: </h2>
+
+- Digitar os dados e clicar em adicionar<br>
+
+- Clicar em atualizar lista e observar o item adicionado logo abaixo <br>
+
+- Editar dado irá selecionar o veículo que você escolheu e então você poderá realizar a edição e clicar em 'atualizar edição', depois, 'atualizar lista' e os seus dados serão atualizados <br>
+
+- Para excluir, basta clicar no botão de excluir e 'atualizar lista' para ter o dado excluído com sucesso!
+
 
   
  
