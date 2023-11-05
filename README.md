@@ -55,8 +55,6 @@ No docker, você deve conseguir visualizar um banco de dados chamado 'basic-mysq
 
 `npx sequelize-cli db:migrate`
 
-(esse comando irá pedir a instalação do sequelize-cli direto pelo terminal, apenas aceite)
-
 <h3>Depois da migration ser efetuada com sucesso, rode esse comando: </h3>
 
 `npx sequelize db:seed:all`
