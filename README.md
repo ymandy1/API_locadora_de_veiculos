@@ -26,15 +26,48 @@
 
 `git clone url_do_repositorio`
 
-<h3>Depois, no terminal, digite: </h3> <br>
+<h3>Agora, considerando que você já tenha todas as dependências baixadas, o npm e o Docker instalado na sua máquina,
+realize a seguinte etapa: </h3>
+
+<h3>No terminal, digite: </h3> <br>
 
 `cd my_app` <br>
 
 `cd back-end` <br>
 
-`cd src` <br>
+E com o Docker aberto, rode o seguinte código para criar o banco de dados:
 
-```npm install```
+```bash
+mkdir /tmp/mysql-data
+docker run --name basic-mysql --rm -v /tmp/mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=ANSKk08aPEDbFjDO -e MYSQL_DATABASE=testing -p 3307:3306 -it mysql:8.0
+```
+(caso dê algum problema, tente somente a segunda linha de código)
+
+<h3>Certifique-se de utilizar o seguinte comando antes de seguirmos para a próxima etapa: </h3>
+
+`npm install`
+
+No docker, você deve conseguir visualizar um banco de dados chamado 'basic-mysql' 
+
+<h3>Feito isso, utilize os seguintes comandos para realizarmos a migration do projeto</h3>
+
+`npx sequelize-cli db:migrate`
+
+(esse comando irá pedir a instalação do sequelize-cli direto pelo terminal, apenas aceite)
+
+<h3>Depois da migration ser efetuada com sucesso, rode esse comando: </h3>
+
+`npx sequelize db:seed:all`
+
+No src do projeto, rode o seguinte comando para abrirmos o servidor:<br>
+
+
+`npm run start`
+
+Isso deverá inicializar um servidor na porta (3333)
+
+<h1>Com o servidor aberto e os dados mostrados, <br> é hora de irmos para o front-end! :tada: </h1>
+
 
 <h2> Proposta de resolução (sem dados)</h2>
 
