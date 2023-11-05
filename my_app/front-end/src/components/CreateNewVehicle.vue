@@ -38,6 +38,7 @@
 		<div class="button-container">
 			<button class="Add" @click="save">Adicionar</button>
 			<button class="Update" @click="update">Atualizar lista</button>
+			<button class="UpdateEdit" @click="updateTable">Atualizar Edição</button>
 		</div>
 	</div>
 	<div class="list">
@@ -63,6 +64,9 @@
 		<p class="ar-condicionado">{{ vehicle.ar_condicionado ? "Possui " : "Não possui" }}</p>
 		<div class="button_delete acoes">
 			<button class="delete" @click="button_delete(vehicle.id)">Excluir</button>
+			<div class="button_edit acoes">
+				<button class="edit" @click="button_edit(vehicle)">Editar</button>
+			</div>
 		</div>
 	</div>
 </template>
@@ -82,7 +86,8 @@ export default {
 			portas: ``,
 			cambio: ``,
 			arCondicionado: false,
-			vehicles: []
+			vehicles: [],
+			id: ""
 		};
 	},
 	methods: {
@@ -141,6 +146,51 @@ export default {
 		},
 		isPar(numero) {
 			return numero % 2 === 0;
+		},
+		button_edit(vehicle) {
+			this.locadora = vehicle.locadora;
+			this.modelo = vehicle.modelo;
+			this.marca = vehicle.marca;
+			this.ano = vehicle.ano;
+			this.motor = vehicle.motor;
+			this.portas = vehicle.portas;
+			this.cambio = vehicle.cambio;
+			this.arCondicionado = vehicle.ar_condicionado;
+			this.id = vehicle.id;
+		},
+		updateTable() {
+			if (
+				this.locadora &&
+				this.modelo &&
+				this.marca &&
+				this.ano &&
+				this.motor &&
+				this.portas &&
+				this.cambio &&
+				this.arCondicionado !== undefined
+			) {
+				const vehicleData = {
+					locadora: this.locadora,
+					modelo: this.modelo,
+					marca: this.marca,
+					ano: Number(this.ano),
+					motor: this.motor,
+					portas: Number(this.portas),
+					cambio: this.cambio,
+					ar_condicionado: this.arCondicionado
+				};
+
+				api
+					.put(`/veiculos/${this.id}`, JSON.stringify(vehicleData))
+					.then(response => {
+						console.log(response);
+					})
+					.catch(error => {
+						console.log(error);
+					});
+			} else {
+				alert("Por favor, preencha todos os campos.");
+			}
 		}
 	}
 };
@@ -169,7 +219,8 @@ label {
 }
 
 .Update,
-.Add {
+.Add, 
+.UpdateEdit{
 	padding: 10px 20px;
 	background-color: #007bff;
 	color: #fff;
@@ -235,8 +286,8 @@ p {
 }
 
 .button_delete button {
-	width: 80%;
-	padding: 10px 20px;
+	width: 90%;
+	padding: 10px 10px;
 	background-color: #007bff;
 	color: #fff;
 	border: none;
@@ -244,10 +295,16 @@ p {
 	cursor: pointer;
 	font-size: 16px;
 	margin-top: 10px;
+	margin-inline: 3px;
 }
 
 .button_delete button:hover {
 	background-color: #0056b3;
-	color: rgb(202, 193, 193);
+	color: #cac1c1;
 }
+
+.button_edit button {
+	margin-right: 15px;
+}
+
 </style>
